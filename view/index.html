@@ -2,11 +2,23 @@
 <html>
 <head>
     <title>Twilio Test</title>
-</head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <body>    
-    <form>
-        <input type="text" name="phoneNumber">
-        <button type="submit" value="Submit"></button>    
-    </form>
+    <div class="container-fluid">
+        <h1>Twilio Test</h1>
+        <form>
+            <div class="col-sm-4 form-group">
+                <label for="phoneNumberInput">Phone Number</label>
+                <input action="/send" method="POST" type="tel" class="form-control" placeholder="Enter Phone Number" id="phoneNumber">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
 </body>
 </html>
